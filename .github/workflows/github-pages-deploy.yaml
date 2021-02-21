@@ -7,7 +7,7 @@ name: github-pages-deploy
 
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
 
 jobs:
   build:
