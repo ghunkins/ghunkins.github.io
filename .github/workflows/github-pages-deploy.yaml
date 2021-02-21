@@ -1,0 +1,23 @@
+# Build & deploy project to github-pages
+#
+# Source:
+# https://github.com/marketplace/actions/deploy-flutter-web-app-to-github-pages
+
+name: github-pages-deploy
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: subosito/flutter-action@v1
+        with:
+          flutter-version: '1.26.0-17.3.pre'
+      - uses: erickzanardo/flutter-gh-pages@v2
+        with:
+            useCanvasKit: true

@@ -1,6 +1,2 @@
-# See https://www.dartlang.org/guides/libraries/private-files
-
-# Files and directories created by pub
-ghunkins/.dart_tool/
-ghunkins/.packages
-ghunkins/build/
+# Apple 
+.DS_Store
